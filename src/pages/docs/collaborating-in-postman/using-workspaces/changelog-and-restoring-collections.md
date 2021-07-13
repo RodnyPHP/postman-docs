@@ -10,14 +10,6 @@ contextual_links:
     url: "/docs/sending-requests/intro-to-collections/"
   - type: section
     name: "Additional Resources"
-  - type: subtitle
-    name: "Case Studies"
-  - type: link
-    name: "SynapseFi"
-    url: "https://www.postman.com/customers/SynapseFI.pdf"
-  - type: link
-    name: "Clarifai"
-    url: "https://www.postman.com/customers/Clarifai.pdf"
   - type: section
     name: "Associated Topics"
   - type: link
@@ -26,6 +18,8 @@ contextual_links:
 
 warning: false
 ---
+
+> **[Changelog is available on Postman Team, Business, and Enterprise plans.](https://www.postman.com/pricing/)**
 
 Your Postman collections display a changelog for reviewing create, update, and delete events. You can use the changelog to keep track of any updates you and your collaborators make to your private and team collections. The changelog also lets you rollback a collection and restore it to any previous point in time. Postman also tracks activity within teams and accounts.
 

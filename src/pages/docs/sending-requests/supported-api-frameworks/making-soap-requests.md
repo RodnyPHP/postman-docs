@@ -1,6 +1,6 @@
 ---
 title: "Making SOAP requests"
-order: 38
+order: 39
 page_id: "making_soap_requests"
 contextual_links:
   - type: section
@@ -31,7 +31,7 @@ The following steps outline how to make a SOAP request in Postman.
 
 Open a new request tab in Postman and enter your SOAP endpoint URL in the address field. Try out the following example if you do not have a specific service you want to call:
 
-```
+```xml
 https://www.dataaccess.com/webservicesserver/NumberConversion.wso
 ```
 
@@ -68,7 +68,7 @@ Your request body should include the SOAP `Envelope`, `Header`, and `Body` tags 
 
 When you select an XML body type, Postman will automatically add a content type header of `application/xml`, but depending on your service provider, for SOAP requests you may need `text/xml`. Open the request __Headers__ and click to show the hidden headers.
 
-Check with your SOAP service whether you need the `application/xml` or `text/xml` header. If you need the `text/xml` header, you will need to override the default setting added by Postman. Deselect the `Content-Type` header Postman added automatically and add a new row with `Content-Type` __Key__ and `text/xml` __Value__.
+Check with your SOAP service whether you need the `application/xml` or `text/xml` header. If you need the `text/xml` header, you will need to override the default setting added by Postman. Deselect the `Content-Type` header Postman added automatically and add a new row with `Content-Type` __Key__ and `text/xml` __Value__.  Additionally, you will need to set a `SOAPAction` header with a value of (and the quotes are required) `"#MethodName"`.  Without this, the service will return 500.
 
 ![SOAP Content Type](https://assets.postman.com/postman-docs/soap-content-type.jpg)
 

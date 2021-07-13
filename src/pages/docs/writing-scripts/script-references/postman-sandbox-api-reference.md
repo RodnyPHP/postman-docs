@@ -121,7 +121,7 @@ console.log(pm.variables.get('score'));//outputs 2
 
 > See the [Postman Collection SDK Variables reference](https://www.postmanlabs.com/postman-collection/Variable.html) for more detail.
 
-You can also access variables defined in the individual scopes via [pm.environment](#scripting-with-environment-variables), [pm.collectionVariables](#scripting-with-collection-variables), and [pm.globals](#scripting-with-global-variables).
+You can also access variables defined in the individual scopes via [pm.environment](#using-environment-variables-in-scripts), [pm.collectionVariables](#using-collection-variables-in-scripts), and [pm.globals](#using-global-variables-in-scripts).
 
 #### Using environment variables in scripts
 
@@ -688,7 +688,7 @@ The callback function accepts two parameters:
 * `error`
     * Any error detail
 * `data`
-    * Data [passed to the template](#pmvisualizerset) by `pm.visualizer.set`
+    * Data [passed to the template](#scripting-visualizations) by `pm.visualizer.set`
 
 Example usage:
 
@@ -756,7 +756,7 @@ The `require` method allows you to use the sandbox built-in library modules. The
 * [cheerio](https://cheerio.js.org/)
 * [crypto-js](https://www.npmjs.com/package/crypto-js)
 * [csv-parse/lib/sync](https://csv.js.org/parse/)
-* [lodash](https://lodash.com/)
+* [lodash](https://lodash.com/) (The built-in `_` object v3.10.1 exists in the sandbox by default. Use `require` to load the latest version.)
 * [moment](https://momentjs.com/docs/)
 * [postman-collection](http://www.postmanlabs.com/postman-collection/)
 * [tv4](https://github.com/geraintluff/tv4)

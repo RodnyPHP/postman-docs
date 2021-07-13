@@ -5,7 +5,7 @@ import algoliasearch from 'algoliasearch/lite';
 import {
   InstantSearch, SearchBox, Hits, Configure, Pagination,
 } from 'react-instantsearch-dom';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
 import DynamicLink from '../Shared/DynamicLink';
@@ -62,7 +62,7 @@ const LoginCheck = (props) => {
   }
   return (
     <a
-      href="https://go.postman.co/build"
+      href="https://go.postman.co/home"
       className="btn btn__primary"
       onClick={() => {
         // To stop the page reloading
